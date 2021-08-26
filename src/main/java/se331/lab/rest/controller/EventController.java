@@ -12,6 +12,7 @@ public class EventController {
 
     @PostConstruct
     public void init(){
+        eventList = new ArrayList<>();
         eventList.add(Event.builder()
             .id(123L)
             .category("animal welfare")
