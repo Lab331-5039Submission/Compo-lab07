@@ -21,6 +21,9 @@ public class RestApplication {
                 registry
                         .addMapping("/events")
                         .allowedOrigins("http://localhost:3000");
+                registry
+                        .addMapping("/events/*")
+                        .allowedOrigins("http://localhost:3000");
             }
         };
     }

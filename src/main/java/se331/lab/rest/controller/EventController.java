@@ -96,7 +96,6 @@ public class EventController {
     }
 
     @GetMapping("events")
-    @CrossOrigin(maxAge = 3600)
     public ResponseEntity<?> getEventLists(
             @RequestParam(value="_limit",required=false) Integer perPage,
             @RequestParam(value="_page",required=false)  Integer page
