@@ -19,11 +19,9 @@ public class RestApplication {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry
-                        .addMapping("/events")
-                        .allowedOrigins("http://localhost:3000");
-                registry
-                        .addMapping("/events/*")
-                        .allowedOrigins("http://localhost:3000");
+                        .addMapping("/**")
+                        .allowedOrigins("http://localhost:3000")
+                        .exposedHeaders("x-total-count");
             }
         };
     }
