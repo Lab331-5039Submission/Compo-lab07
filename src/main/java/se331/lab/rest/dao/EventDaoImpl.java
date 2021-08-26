@@ -1,6 +1,5 @@
 package se331.lab.rest.dao;
 
-import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Repository;
 import se331.lab.rest.entity.Event;
 
