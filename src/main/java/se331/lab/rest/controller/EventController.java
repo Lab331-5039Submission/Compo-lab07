@@ -32,7 +32,7 @@ public class EventController {
         try {
             output = eventService.getEvents(perPage,page);
         }catch (IndexOutOfBoundsException ex){
-            return new ResponseEntity<>(output,responseHeader,HttpStatus.OK);
+            return new ResponseEntity<>(null,responseHeader,HttpStatus.OK);
         }
         return new ResponseEntity<>(output,responseHeader,HttpStatus.OK);
     }
