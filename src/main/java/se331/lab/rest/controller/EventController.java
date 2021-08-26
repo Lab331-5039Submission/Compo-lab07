@@ -1,12 +1,17 @@
 package se331.lab.rest.controller;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 import se331.lab.rest.entity.Event;
 
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 
+@Controller
 public class EventController {
     List<Event> eventList;
 
@@ -85,5 +90,10 @@ public class EventController {
                 .organizer("Brody Kill")
                 .build()
         );
+    }
+
+    @GetMapping("events")
+    public ResponseEntity<?> getEventLists(){
+        return ResponseEntity.ok(eventList);
     }
 }
