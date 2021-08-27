@@ -86,6 +86,42 @@ public class EventDaoImpl implements EventDao{
                 .organizer("Brody Kill")
                 .build()
         );
+        eventList.add(Event.builder()
+                .id(1004L)
+                .category("Gaming")
+                .title("Magic the gathering by my rule")
+                .description("Screw the stand rule now we on Thai rule")
+                .location("Nowhere to be")
+                .date("September 8, 2022")
+                .time("18:00")
+                .petAllowed(false)
+                .organizer("Sahachan Tippimwong")
+                .build()
+        );
+        eventList.add(Event.builder()
+                .id(1005L)
+                .category("Gaming")
+                .title("Yugi by my rule")
+                .description("Screw the stand rule now we on Thai rule")
+                .location("Nowhere to be")
+                .date("September 18, 2022")
+                .time("8:00")
+                .petAllowed(true)
+                .organizer("FLowero Oralita")
+                .build()
+        );
+        eventList.add(Event.builder()
+                .id(1005L)
+                .category("Gaming")
+                .title("Dota2 by my rule")
+                .description("Screw the stand rule now we on Thai rule")
+                .location("Nowhere to be")
+                .date("September 28, 2022")
+                .time("6:00")
+                .petAllowed(true)
+                .organizer("FLowero Panomete")
+                .build()
+        );
     }
 
     @Override
